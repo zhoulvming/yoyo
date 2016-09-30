@@ -1,0 +1,10 @@
+<div class="" *ngIf="!yoyos">
+  loading
+</div>
+
+<ul class="yoyos">
+  <li *ngFor="let yoyo of yoyos" (click)="onSelect(yoyo)">
+    <span class="badge">{{yoyo.title}}</span>
+    <span class="badge">{{yoyo.date}}</span>
+  </li>
+</ul>
